@@ -1,0 +1,31 @@
+<!-- 
+No copyright whatsoever
+
+Author: Niral Fernando  
+Email: niral.fernando@mgail.com   
+-->
+
+
+<html>
+	<head>
+		<title>Home Lamp Control!</title>
+	</head>
+	<body>
+		Turn Niral's SmartLamp ON/OFF 
+		<!--With the question mark, we are specifying the variable that will be sent to the server-->
+		<!--"https://ece.uwaterloo.ca/~mn2ferna/imp.html" is where I have the website-->
+		<form action="https://agent.electricimp.com/71XhgaxKSjeR/api/light?led=1" method="post">
+			<!--<input type="hidden" id="value" name="value" value="1"> <!--send value 1-->
+			<input type="submit" value="Turn lamp On">
+		</form>
+		<!--With the question mark, we are specifying the variable that will be sent to the server-->
+		<form action=" https://agent.electricimp.com/71XhgaxKSjeR/api/light?led=0" method="post">
+			<!--<input type="hidden" id="value" name="value" value="1">-->
+			<input type="submit" value="Turn lamp Off"> 
+			
+		</form>
+	</body>
+</html>
+
+ <!-- { state: "on" } -->
+ 
